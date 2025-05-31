@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Baloo+Da+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bg-image.jpg");
+    background-size: cover;
+    font-family: "Baloo Da 2", cursive;
+}
+
+/* Navigation bar */
+nav {
+    color: rgb(41, 251, 41);
+    height: 70px;
+    font-size: 3vw;
+    font-weight: bolder;
+    padding-left: 5%;
+    padding-top: 15px;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0px 3px 0px rgb(255, 255, 255);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* Main game container */
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: "Baloo Da 2", cursive;
+}
+
+/* Player name style */
+.name {
+    color: rgb(255, 4, 4);
+    font-size: 4vw;
+    text-shadow: 0px 3px 0px rgb(255, 255, 255);
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* Game header */
+.gameInfo h1 {
+    color: rgb(41, 251, 41);
+    font-size: 2vw;
+    text-shadow: 0px 3px 0px rgb(255, 255, 255);
+}
+
+/* Grid container */
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+}
+
+/* Each box */
+.box {
+    color: white;
+    border: solid rgb(41, 251, 41) 4px;
+    background-color: rgb(41, 56, 19);
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 30%;
+    margin: 2px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.box:hover {
+    background-color: white;
+    color: rgb(41, 251, 41);
+}
+
+/* Info and reset container */
+.statusControl {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Turn info */
+.info {
+    display: inline-block;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(90deg, #1fa2ff, #12d8fa, #a6ffcb);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-family: 'Baloo Da 2', cursive;
+}
+
+/* Reset button */
+#reset {
+    font-size: 1.2vw;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#reset:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #ee0979, #ff6a00);
+}
+
+/* Additional styles */
+.gameInfo {
+    padding: 0 30px;
+}
+
+.imgbox img {
+    margin: 50px;
+    display: none;
+}
